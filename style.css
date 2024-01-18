@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(70, 68, 68);
+}
+
+.menu{
+    width: 98%;
+    margin: 10px auto;
+    padding: 10px 0;
+    background-color: rgb(255, 77, 0);
+   
+}
+
+.menu-item{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+.menu-link a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+}
+.menu-link{
+    font-size:1.5rem;
+    position: relative;
+}
+.menu .menu-item ul{
+    position: absolute;
+    background-color: rgb(255, 77, 0);
+    list-style: none;
+    width: 240px;
+    top: 48px;
+    left: 0;
+    display: none;
+}
+.menu .menu-item ul a{
+    padding:  20px;
+    display: block;
+}
+.menu-item .menu-link:hover ul{
+    display: block;
+}
+.menu-item .menu-link:hover .drop-link a{
+    background: none;
+}
+.menu .menu-item ul .drop-link a:hover{
+    color: white;
+    background-color: black;
+}
+
+
+.menu .menu-item ul .drop-link{
+    position: relative;
+}
+.menu .menu-item ul .drop-link ul{
+    position: absolute;
+    background-color: rgb(255, 77, 0);
+    list-style: none;
+    width: 240px;
+    top: 0;
+    left:238px;
+    display: none;
+}
+ul .drop-link ul a{
+    padding:  20px;
+    display: block;
+}
+.menu .menu-item ul .drop-link:hover ul{
+    display: block;
+}
+ul .drop-link:hover li a{
+    background: none;
+}
+ul .drop-link ul a:hover{
+    color: white;
+    background-color: black;
+}
